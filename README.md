@@ -15,7 +15,10 @@ spelling and capitalization as your opening tag, but with one tiny change: a / a
 
 #### Example:
 
-```<myElement>some content here</myElement>```
+```<elements> 
+    <myelement>one</myelement> 
+    <myelement>two</myelement> 
+ </elements>
  
 #####Elements:
 
