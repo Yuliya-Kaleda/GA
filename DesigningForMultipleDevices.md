@@ -15,17 +15,31 @@ device at run time. The folder structure will look like this:
 ![](https://cloud.githubusercontent.com/assets/10750398/11786265/9ea49d9c-a253-11e5-92cb-a4cf2cb46968.png)
 
 Add the string values for each locale into the appropriate file. At runtime, the Android system uses the appropriate set of string resources based on the locale currently set for the user's device. For example, the following are some different string resource files for different languages.
+
 English (default locale), /values/strings.xml:
+```
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="program">General Assembly</string>
 </resources>
+```
 
 Spanish, /values-es/strings.xml:
+```
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title">Mi Aplicación</string>
+    <string name="program">Asamblea General</string>
 </resources>
+```
+It is a good practice to reference your string resources in your source code and other XML files using the resource name defined by the ```<string>``` element's name attribute.
+
+##### Example:
+
+* Reference in code:
+    ```TextView textView = (TextView) findViewById(R.id.view);
+        textView.setText(R.string.program);```
+
+
 
 
 
