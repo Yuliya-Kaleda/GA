@@ -12,7 +12,7 @@ include a hyphen and the ISO language code at the end of the directory name. For
 resourcess for the Locales with the language code "es". Android loads the appropriate resources according to the locale settings of the 
 device at run time. The folder structure will look like this:
 
-![](https://cloud.githubusercontent.com/assets/10750398/11786265/9ea49d9c-a253-11e5-92cb-a4cf2cb46968.png)
+![](https://cloud.githubusercontent.com/assets/10750398/11787045/d1075c76-a257-11e5-9850-9337d7d28476.png)
 
 Add the string values for each locale into the appropriate file. At runtime, the Android system uses the appropriate set of string resources based on the locale currently set for the user's device. For example, the following are some different string resource files for different languages.
 
@@ -36,8 +36,20 @@ It is a good practice to reference your string resources in your source code and
 ##### Example:
 
 * Reference in code:
-    ```TextView textView = (TextView) findViewById(R.id.view);
-        textView.setText(R.string.program);```
+```
+    TextView textView = (TextView) findViewById(R.id.view);
+    textView.setText(R.string.program);
+```
+* Reference in xml file:
+
+```
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/program" />
+```
+
+#### Supporting Different Screens
 
 
 
