@@ -62,18 +62,18 @@ To optimize user experience on different screen sizes, you should create a uniqu
 ![](https://cloud.githubusercontent.com/assets/10750398/11787480/e1db3fac-a259-11e5-9874-de95420af6a3.png)
 
  This project includes a default layout and an alternative layout for large screens. The file names must be exactly the same, but their contents are different in order to provide an optimized UI for the corresponding screen size.
- Also be aware that the screens orientation (landscape or portrait) is considered a variation of screen size, so many apps should revise the layout to optimize the user experience in each orientation. By default, the layout xml files are used for portrait orientation. To reference a lanscape orientation, the folder should add the suffis -land. 
+ Also be aware that the screens orientation (landscape or portrait) is considered a variation of screen size, so many apps should revise the layout to optimize the user experience in each orientation. By default, the layout xml files are used for portrait orientation. To reference a lanscape orientation, the folder should add the suffix -land. 
  
  ![](https://cloud.githubusercontent.com/assets/10750398/11794335/cd4f40f4-a27e-11e5-8fa4-2ea7a2f81316.png)
  
- ###### Create Different Bitmaps
+###### Create Different Bitmaps
  
 All bitmap resources should be properly scaled to each of the generalized density buckets: low, medium, high and extra-high density. To generate images, you should start with your raw resource in vector format and generate the images for each density using the following size scale:
 
-xhdpi: 2.0
-hdpi: 1.5
-mdpi: 1.0 (baseline)
-ldpi: 0.75
+- xhdpi: 2.0
+- hdpi: 1.5
+- mdpi: 1.0 (baseline)
+- ldpi: 0.75
 
 After the images are ready, they are placed in the appropriate drawable resource directory. For example:
 
