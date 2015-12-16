@@ -11,9 +11,8 @@ The list must meet the following criteria:
 - a movie should have 2 empty elements.
 
 ### Solution:
-
+```
 <movie_collection xmlns:collection="http://movies.com">
-
   <movie
     collection:id="1"
     collection:title="Gone With the Wind"
@@ -63,3 +62,4 @@ The list must meet the following criteria:
   </movie>
 
 </movie_collection>
+```
