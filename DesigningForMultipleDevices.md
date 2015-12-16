@@ -81,7 +81,7 @@ After the images are ready, they are placed in the appropriate drawable resource
 
 ![](https://cloud.githubusercontent.com/assets/10750398/11794684/98b1926e-a280-11e5-8dbf-6750034c1b0a.png)
  
-Any time you reference @drawable/android.png, the system selects the appropriate bitmap based on the screen's density.
+Any time you reference ```@drawable/android.png```, the system selects the appropriate bitmap based on the screen's density.
 
 #### Supporting Different API Levels
 
@@ -103,7 +103,8 @@ When talking about API Level, there are three main attributes to take into consi
 * ```android:minSdkVersion```
 
 An integer designating the minimum API Level required for the application to run. The Android system will prevent the user from installing the application if the system's API Level is lower than the value specified in this attribute. You should always declare this attribute.
-Caution: If you do not declare this attribute, the system assumes a default value of "1", which indicates that your application is compatible with all versions of Android. If your application is not compatible with all versions (for instance, it uses APIs introduced in API Level 3) and you have not declared the proper minSdkVersion, then when installed on a system with an API Level less than 3, the application will crash during runtime when attempting to access the unavailable APIs. For this reason, be certain to declare the appropriate API Level in the minSdkVersion attribute.
+
+*Caution*: If you do not declare this attribute, the system assumes a default value of "1", which indicates that your application is compatible with all versions of Android. If your application is not compatible with all versions (for instance, it uses APIs introduced in API Level 3) and you have not declared the proper minSdkVersion, then when installed on a system with an API Level less than 3, the application will crash during runtime when attempting to access the unavailable APIs. For this reason, be certain to declare the appropriate API Level in the minSdkVersion attribute.
 
 * ```android:targetSdkVersion```
 
