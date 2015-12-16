@@ -10,7 +10,7 @@ Android platform.
 It’s always a good practice to extract UI strings from your app code and keep them in an external file. Android makes this easy with 
 a resources directory in each Android project. To add support for more languages, create additional values directories inside res/ that 
 include a hyphen and the ISO language code at the end of the directory name. For example, values-es/ is the directory containing simple 
-resourcess for the Locales with the language code "es". Android loads the appropriate resources according to the locale settings of the 
+resources for the Locales with the language code "es". Android loads the appropriate resources according to the locale settings of the 
 device at run time. The folder structure will look like this:
 
 ![](https://cloud.githubusercontent.com/assets/10750398/11850638/b00e7ef2-a43f-11e5-97d8-2edc99aca02e.png)
